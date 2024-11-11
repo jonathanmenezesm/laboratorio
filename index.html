@@ -1,31 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario T1</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Cadastre-se</h1>
-        <h2>Comprem ingressos para o jogo.</h2>
+      <h1>Cadastre-se</h1>
+      <h2>Comprem ingressos para o jogo.</h2>
     </header>
     <main>
-        <form action="">
-            <fieldset>
-                <legend> Preencha os campos </legend>
-                
-                <div>
-                <label for="nome"> Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="Escreva seu nome" />
-                </div>
+      <form action="">
+        <fieldset>
+          <legend>Preencha os campos</legend>
 
-                <label for="nome"> Email: </label>
-                <input type="text" name="email" id="email" placeholder="Escreva seu email" />
+          <div>
+            <label for="nome"> Nome:</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Escreva seu nome"
+            />
+          </div>
 
-            </fieldset>
-        </form>
+          <label for="nome"> Email: </label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Escreva seu email"
+          />
+
+        
+            <div>
+                <label for="telefone"> Tefelone: </label>
+
+                <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" required pattern="[0-9]{2} [0-9]{5}" />
+
+            </div>
+
+            <div>
+                <label for="estados">Estados:</label>
+                <select>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                </select>
+            
+            </div>
+        
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações:</legend>
+          
+          <label for="site">Site:</label>
+          <input type="url" id="site" name="site" />
+
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" />
+
+          <label for="nascimento">Data de nascimento:</label>
+          <input type="date" name="nascimento" id="nascimento" />
+
+        </fieldset>
+
+        <fieldset>
+          <!--Checked especifica que a checkbox já venha selecionado -->
+
+          <input type="checkbox" name="autorizacao" checked />
+          <label for="autorizacao">Concordo que utilize minhas informações para fins de marketing.</label>
+          
+
+          <p>Seus dados estarão seguros conosco e protegidos por criptografia. Para maiores informações sobre o uso de seus dados pessoais, consulte nossa política de privacidade e cookies.</p>
+
+
+        </fieldset>
+
+        <fieldset>
+          
+          <img src="https://images.vexels.com/media/users/3/201138/isolated/lists/143b8e1550deda3eadf5a8c0045cbb0f-robo-de-brinquedo-plano.png" alt="robozin" width="50px"/>
+        </fieldset>
+        
+      </form>
     </main>
-    
-</body>
+  </body>
 </html>
